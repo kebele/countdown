@@ -11,6 +11,8 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        background-position: center;
+        height: 100%;
         color: black;
         text-align: center;
         width: 100vw;
@@ -108,38 +110,38 @@
         }
       }
 
-      #fly-out{
+      #fly-out {
         font-size: 17vw;
         height: 20vh;
         opacity: 0;
         margin: -37vh auto;
         text-align: center;
         color: orange;
-        animation : out 10s linear 1;
+        animation: out 10s linear 1;
         animation-delay: 13s;
       }
 
-      @keyframes out{
-          0%{
-              opacity: 0;
-              filter: blur(20p);
-              transform : scale(.2);
-          }
-          3%{
-              opacity: 1;
-              filter: blur(0);
-              transform : scale(1);
-          }
-          10%{
-              opacity: 1;
-              filter: blur(0);
-              transform : scale(0.9);
-          }
-          30%{
-              opacity: 1;
-              filter: blur(0);
-              transform : scale(.9);
-          }
+      @keyframes out {
+        0% {
+          opacity: 0;
+          filter: blur(20p);
+          transform: scale(0.2);
+        }
+        3% {
+          opacity: 1;
+          filter: blur(0);
+          transform: scale(1);
+        }
+        10% {
+          opacity: 1;
+          filter: blur(0);
+          transform: scale(0.9);
+        }
+        30% {
+          opacity: 1;
+          filter: blur(0);
+          transform: scale(0.9);
+        }
       }
     </style>
   </head>
